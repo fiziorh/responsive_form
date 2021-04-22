@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Now</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>THE CODE REVIEW</h1>
+        </div>
+        <article class="heading2">
+            <h2 class="headingh2">Signup for our newsletter</h2>
+            <p class="headingp">Get the latest news on how your code is doing right in your inbox</p>
+        </article>
+    </header>
+    <main>
+        <form action="index.html">
+            <fieldset class="contact-info">
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="name" class="label">Full Name</label>
+                <input type="text" id="name" name="user_name" required placeholder="Required" class="field"> <br>
+
+                <label for="email" class="label">Email Address</label>
+                <input type="email" name="user_email" id="email" required placeholder="Required" class="field"> <br>
+
+                <label for="phone" class="label">Phone Number</label>
+                <input type="text" name="user_phone" id="phone" required class="field"> <br>
+
+                <label for="street_address" class="label">Street Address</label>
+                <input type="text" name="user_street_address" id="street_address" required class="field"> <br>
+
+                <label for="city" class="label">City</label>
+                <input type="text" name="user_city" id="city" required class="field"> <br>
+
+                <label for="state" class="label">State</label>
+                <select name="user_state" id="state" class="field">
+
+                    <optgroup label="Pulau Jawa" class="label">
+                        <option value="Jawa_Barat">Jawa Barat</option>
+                        <option value="Jawa_Tengah">Jawa Tengah</option>
+                        <option value="Jawa_Timur">Jawa Timur</option>
+                    </optgroup>
+
+                    <optgroup label="Pulau Sumatera" class="label">
+                        <option value="Sumatera_Barat">Sumatera Barat</option>
+                        <option value="Sumatera_Utara">Sumatera Utara</option>
+                        <option value="Aceh">Aceh</option>
+                    </optgroup>
+
+                </select> <br>
+
+                <label for="zip" class="label">Zip Code</label>
+                <input type="text" name="user_zipcode" id="zip" class="field"> <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Newsletter
+                </legend>
+
+                <label class="label" id="firstbox">Select the newsletters you would like to receive</label> <br>
+                <input type="checkbox" name="html_newsletter" id="html_news" class="boxes"> <label for="html_news">HTML
+                    News</label>
+                <br>
+
+
+                <input type="checkbox" name="css_newsletter" id="css_news" class="boxes"> <label for="css_news">CSS
+                    News</label> <br>
+
+                <input type="checkbox" name="js_newsletter" id="js_news" class="boxes"> <label for="js_news">Javascript
+                    News</label>
+                <br>
+
+                <label class="label" id="newsletter">Newsletter format</label> <br>
+                <input type="radio" name="news_format" id="html_format" class="boxes"> <label
+                    for="html_format">HTML</label><br>
+
+                <input type="radio" name="news_format" id="plain_format" class="boxes"> <label for="plain_format">Plain
+                    Text</label>
+                <br>
+                <div class="textarea2">
+                    <label for="textarea" class="label" id="textarea1">Other topics you'd like to hear
+                        about</label> <br>
+                    <textarea name="user_suggestion" id="textarea" cols="30" rows="10" class="field"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="field" id="button">Sign Up</button>
+        </form>
+    </main>
+    <footer><small><i>&copy; The Code Review</i></small></footer>
+
+</body>
+
+</html>
