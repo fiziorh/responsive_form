@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #fffffc;
+    transition: 1s;
 }
 fieldset {
     border: none;
@@ -34,7 +35,8 @@ main {
 /* HEADER STYLE */
 .heading {
     margin: 0;
-    background-color: #003049;
+    /* background-color: #003049; */
+    background-color: #06d6a0;
     width: 100%;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -65,7 +67,7 @@ h1 {
     text-align: right;
     padding-right: 0.2rem;
 }
-label, .headingp {
+label, .headingp, footer {
     color: #6c757d;
     font-family: 'Merriweather', serif;
     line-height: 1.5rem;
@@ -91,13 +93,15 @@ label, .headingp {
 }
 #button {
     height: 4rem;
-    background-color: #52b69a;
+    /* background-color: #52b69a; */
+    background-color: #118ab2;
     color:#fffffc ;
     font-size:1.3rem;
 }
 footer {
     padding-top: 3rem;
 }
+/* MISC STYLES */
 
 @media screen and (min-width:1024px) {
     main, .heading2 {
@@ -105,6 +109,39 @@ footer {
         margin-left: auto;
         margin-right: auto;
 }
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    
+}
+.field {
+    width: 70%;
+    margin-left: auto;
+}
+
+#textarea, #button {
+    width: 100%;
+}
+
+.field:focus {
+  background-color: #faf9f9;
+  transition: 0.5s;
+}
+#zip {
+    margin-right: 30%;
+}
+
+#button {
+    opacity: 85%;
+}
+#button:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
 }
 
 

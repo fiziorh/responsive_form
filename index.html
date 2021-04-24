@@ -27,41 +27,50 @@
                 <legend>
                     Contact Information
                 </legend>
-                <label for="name" class="label">Full Name</label>
-                <input type="text" id="name" name="user_name" required placeholder="Required" class="field"> <br>
+                <div class="flex">
+                    <label for="name" class="label">Full Name</label>
+                    <input type="text" id="name" name="user_name" required placeholder="Required" class="field"> <br>
+                </div>
 
-                <label for="email" class="label">Email Address</label>
-                <input type="email" name="user_email" id="email" required placeholder="Required" class="field"> <br>
+                <div class="flex">
+                    <label for="email" class="label">Email Address</label>
+                    <input type="email" name="user_email" id="email" required placeholder="Required" class="field"> <br>
+                </div>
 
-                <label for="phone" class="label">Phone Number</label>
-                <input type="text" name="user_phone" id="phone" required class="field"> <br>
+                <div class="flex">
+                    <label for="phone" class="label">Phone Number</label>
+                    <input type="text" name="user_phone" id="phone" required class="field"> <br>
+                </div>
+                <div class="flex">
+                    <label for="street_address" class="label">Street Address</label>
+                    <input type="text" name="user_street_address" id="street_address" required class="field"> <br>
+                </div>
+                <div class="flex">
+                    <label for="city" class="label">City</label>
+                    <input type="text" name="user_city" id="city" required class="field"> <br>
+                </div>
+                <div class="flex">
+                    <label for="state" class="label">State</label>
+                    <select name="user_state" id="state" class="field">
 
-                <label for="street_address" class="label">Street Address</label>
-                <input type="text" name="user_street_address" id="street_address" required class="field"> <br>
+                        <optgroup label="Pulau Jawa" class="label">
+                            <option value="Jawa_Barat">Jawa Barat</option>
+                            <option value="Jawa_Tengah">Jawa Tengah</option>
+                            <option value="Jawa_Timur">Jawa Timur</option>
+                        </optgroup>
 
-                <label for="city" class="label">City</label>
-                <input type="text" name="user_city" id="city" required class="field"> <br>
+                        <optgroup label="Pulau Sumatera" class="label">
+                            <option value="Sumatera_Barat">Sumatera Barat</option>
+                            <option value="Sumatera_Utara">Sumatera Utara</option>
+                            <option value="Aceh">Aceh</option>
+                        </optgroup>
 
-                <label for="state" class="label">State</label>
-                <select name="user_state" id="state" class="field">
-
-                    <optgroup label="Pulau Jawa" class="label">
-                        <option value="Jawa_Barat">Jawa Barat</option>
-                        <option value="Jawa_Tengah">Jawa Tengah</option>
-                        <option value="Jawa_Timur">Jawa Timur</option>
-                    </optgroup>
-
-                    <optgroup label="Pulau Sumatera" class="label">
-                        <option value="Sumatera_Barat">Sumatera Barat</option>
-                        <option value="Sumatera_Utara">Sumatera Utara</option>
-                        <option value="Aceh">Aceh</option>
-                    </optgroup>
-
-                </select> <br>
-
-                <label for="zip" class="label">Zip Code</label>
-                <input type="text" name="user_zipcode" id="zip" class="field"> <br>
-
+                    </select> <br>
+                </div>
+                <div class="flex">
+                    <label for="zip" class="label">Zip Code</label>
+                    <input type="text" name="user_zipcode" id="zip" class="field"> <br>
+                </div>
             </fieldset>
 
             <fieldset>
@@ -73,7 +82,6 @@
                 <input type="checkbox" name="html_newsletter" id="html_news" class="boxes"> <label for="html_news">HTML
                     News</label>
                 <br>
-
 
                 <input type="checkbox" name="css_newsletter" id="css_news" class="boxes"> <label for="css_news">CSS
                     News</label> <br>
