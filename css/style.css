@@ -101,9 +101,17 @@ label, .headingp, footer {
 footer {
     padding-top: 3rem;
 }
+#textarea::placeholder {
+    text-align: left;
+}
+.field:focus {
+    background-color: #faf9f9;
+    transition: 0.5s;
+  }
+    
 /* MISC STYLES */
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     main, .heading2 {
         width: 60%;
         margin-left: auto;
@@ -126,10 +134,7 @@ footer {
     width: 100%;
 }
 
-.field:focus {
-  background-color: #faf9f9;
-  transition: 0.5s;
-}
+
 #zip {
     margin-right: 30%;
 }
